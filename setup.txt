@@ -1,0 +1,49 @@
+In new folder:
+
+npm init (creates package.json)
+
+npm install --save express mongoose morgan body-parser
+  * morgan is for logging
+  * body-parser will parse incoming traffic as json (assuming that's how we set it up)
+
+create and setup index.js (starting point of application, also where you setup your middleware)
+  * at this point you can start the server by running 'node index.js'
+
+create .gitignore and add "node_modules" (tells git to ignore the node_modules folder)
+
+install nodemon (watches project directory for any file changes)
+
+in the scripts section of package.json add:
+  - "dev": "nodemon index.js"
+  - this will allow us to run 'npm run dev' from the command line to now start our
+    server using nodemon
+
+create file router.js for the route handlers
+  - import this file in index.js and call it with app
+  - ex: router(app)
+
+create a models folder for the individual models (schemas) created using mongoose
+
+in index.js add connection to your mongo db
+
+add a controllers folder, see 'controller architecture.jpg' for example of flow with controllers
+
+install bcrypt-nodejs to encrypt passwords
+
+setup up authentication in an authentication controller
+
+install jwt-simple for creating JSON web tokens
+
+create config.js for holding secrets and config info
+
+add config.js to .gitignore
+
+add secret string to config.js for creating JSON web tokens
+
+install passport and passport-jwt  (use passport to see if a user is authenticated to use our application)
+
+create a services folder
+
+create passport.js in services folder
+
+install passport-local
