@@ -47,3 +47,7 @@ create a services folder
 create passport.js in services folder
 
 install passport-local
+
+install cors (npm install --save cors)
+
+add cors to index.js (app.use(cors()))

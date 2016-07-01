@@ -6,6 +6,7 @@ const morgan = require('morgan');
 const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // DB Setup
 mongoose.connect('mongodb://EventAdmin:testpass@ds023664.mlab.com:23664/eventtrackdb');
@@ -15,6 +16,7 @@ mongoose.connect('mongodb://EventAdmin:testpass@ds023664.mlab.com:23664/eventtra
 // app.use registers the middleware for the application, middleware is something any
 // incoming request will be passed into
 app.use(morgan('combined'));                    // logging framework
+app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));      // Parse incoming request as json
 router(app);
 
