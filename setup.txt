@@ -50,4 +50,4 @@ install passport-local
 
 install cors (npm install --save cors)
 
-add cors to index.js  - (app.use(cors()))
+add cors to index.js  (app.use(cors()))
