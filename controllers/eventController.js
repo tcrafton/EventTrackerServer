@@ -21,6 +21,11 @@ exports.updateEvent = function(req, res) {
     event.eventName = req.body.eventName;
     event.description = req.body.description;
     event.eventDate = req.body.eventDate;
+    event.address.number = req.body.number;
+    event.address.street = req.body.street;
+    event.address.city = req.body.city;
+    event.address.state = req.body.state;
+    event.address.zipcode = req.body.zipcode;
 
     event.save(function(err) {
       if (err) {
