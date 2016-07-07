@@ -10,5 +10,5 @@ Backend for the Event Tracker application.
 *  Mongoose
 
 ## Notes
-To run:
-npm run dev
+*  To run:  npm run dev
+*  Connects to [mLab](https://mlab.com/)
