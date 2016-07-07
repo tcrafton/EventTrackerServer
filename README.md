@@ -8,3 +8,7 @@ Backend for the Event Tracker application.
 *  bcrypt
 *  MongoDB
 *  Mongoose
+
+## Notes
+To run:
+npm run dev
