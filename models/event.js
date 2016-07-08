@@ -5,6 +5,8 @@ const eventSchema = new Schema({
   eventName: String,
   description: String,
   eventDate: String,
+  lat: Number,
+  lon: Number,
   address: {
     number: String,
     street: String,

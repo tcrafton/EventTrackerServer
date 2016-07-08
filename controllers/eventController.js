@@ -26,6 +26,8 @@ exports.updateEvent = function(req, res) {
     event.address.city = req.body.city;
     event.address.state = req.body.state;
     event.address.zipcode = req.body.zipcode;
+    event.lat = req.body.lat;
+    event.lon = req.body.lon;
 
     event.save(function(err) {
       if (err) {
